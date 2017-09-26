@@ -1,0 +1,17 @@
+{
+  "name": "facility-base",
+  "version": "1.0.0",
+  "description": "Facility Base entities, interfaces and components ",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
+}

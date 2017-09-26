@@ -1,0 +1,40 @@
+import { IFacilityEvent } from "../interfaces/facilityEvent";
+import { IUserRef } from "../interfaces/userRef";
+import { IUser } from "../interfaces/user";
+import { IItem } from "../interfaces/item";
+import { IProperty } from "../interfaces/property";
+import { IResource } from "../interfaces/resource";
+import { IItemRef } from "../interfaces/itemRef";
+import { IProject } from "../interfaces/project";
+export class FacilityEvent implements IFacilityEvent {
+    ID: string;
+    LsID: string;
+    Title: string;
+    Status: string;
+    DataUrl: String;
+    BackupDataUrl: string;
+    LocalDataUrl: string;
+    SubmittedDate: Date;
+    CreatedDate: Date;
+    Lab: string;
+    AccNum: string;
+    OwnerRef: IUserRef;
+    Owner: IUser;
+    PiRef: IUserRef;
+    Pi: IUser;
+    AssignedToRef: IUserRef;
+    AssignedTo: IUser;
+    ImageUrl: string;
+    Properties: Array<IProperty>;
+    Location: string;
+    MaxAttendees: number = 0;
+    Resources: Array<IResource>;
+    ResourceRefs: Array<IItemRef>;
+    StartTime: Date;
+    EndTime: Date;
+    Parent: IItem;
+    Project: IProject;
+    ProjectRef: IItemRef;
+    ParentRef: IItemRef;
+}
+

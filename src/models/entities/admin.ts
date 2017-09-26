@@ -1,0 +1,30 @@
+import { UserRoles } from "../enums/userRoles";
+import { IAdmin } from "../interfaces/admin";
+import { Property } from "./property";
+import { UserRef } from "./userRef";
+export class Admin implements IAdmin {
+    Role : UserRoles = UserRoles.Admin;
+    id: string;
+    loginName: string;
+    userName: string;
+    email: UserRef;
+    isRegistered: boolean;
+    isActive: boolean;
+    regDate: Date;
+    displayName: string;
+    lab: string;
+    accNum: number;
+    role: string;
+    pi: UserRef;
+    imageUrl: string;
+    can: string;
+    canDescription: string;
+    jobTitle: string;
+    workPhone: string;
+    cellPhone: string;
+    faxNumber: string;
+    building: string;
+    msc: string;
+    userLevel: string;
+    Properties: Array<Property>;
+}
