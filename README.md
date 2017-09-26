@@ -14,7 +14,7 @@ Facility's base components.
   - Common - Facility's Common Components (ICallbacks).
   - Models - Facility's Interfaces, Classes and Enums.
 ### Code
-[Code documentation](https://github.com/JamilOmar/facility-base/tree/master/docs/globals.html)
+[Code documentation](http://htmlpreview.github.io/?https://github.com/JamilOmar/facility-base/blob/master/docs/globals.html)
 ## Usage
 Create a new typescript project and reference facility-base, Implement each of the Lib's Interfaces
 ```sh
